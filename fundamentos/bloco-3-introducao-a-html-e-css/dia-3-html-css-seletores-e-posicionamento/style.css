@@ -21,7 +21,6 @@ div:nth-of-type(5) {
 
 div:nth-of-type(1) > h3 {
     color: purple;
-    font-style: italic;
 }
 
 div:nth-of-type(2) > h3 {
@@ -30,7 +29,6 @@ div:nth-of-type(2) > h3 {
 
 div:nth-of-type(3) > h3 {
     color: black;
-    font-style: italic;
 }
 
 div:nth-of-type(4) > h3 {
@@ -39,7 +37,9 @@ div:nth-of-type(4) > h3 {
 
 div:nth-of-type(5) > h3 {
     color: brown;
-    font-style: italic;
 }
 
+div:nth-child(odd) > h3 {
+    font-style: italic;
+}
 
