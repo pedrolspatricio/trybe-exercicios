@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 h1 {
     text-align: center;
   }
@@ -8,6 +12,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    list-style: none;
+    display: inline-block;
   }
 
   .second {
@@ -24,4 +30,17 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+  }
+
+  .second-and-third li {
+    display:inline-block;
+  }
+
+  .list h3 {
+    text-align: center;
+  }
+
+  .list ul li {
+    display: inline-block;
+    margin-: auto;
   }
