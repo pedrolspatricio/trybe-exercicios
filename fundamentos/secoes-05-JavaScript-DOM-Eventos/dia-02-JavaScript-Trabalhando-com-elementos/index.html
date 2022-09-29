@@ -57,7 +57,24 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+        
+        const h1 = document.createElement('h1');
+        h1.innerHTML = 'Exercício - JavaScript DOM';
+        document.body.appendChild(h1);
+
+        const elementMain = document.createElement('main');
+        elementMain.className = 'main-content';
+        document.body.appendChild(elementMain);
+
+        const elementSection = document.createElement('section');
+        elementSection.className = 'center-content';
+        elementMain.appendChild(elementSection);
+
+        const elementP = document.createElement('p');
+        elementP.innerHTML = 'olá pessoas';
+        elementSection.appendChild(elementP);
+        
+
     </script>
   </body>
 </html>
