@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+        <script>
+            let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+    
+            let pai = elementoOndeVoceEsta.parentElement
+            pai.style.color = 'green'
+            
+
+            let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
+            primeiroFilhoDoFilho.innerText = 'Olá pessoal!'
+
+            let primeiroFilho = pai.firstElementChild; 
+            
+            let primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+
+            let atention = elementoOndeVoceEsta.nextSibling;
+
+            let terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+
+            let terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+
+            let elementoOndeVoceEsta2 = document.createElement('section')
+            pai.appendChild(elementoOndeVoceEsta2);
+
+            let filhoElementoOndeVoceEsta = document.createElement('section')
+            elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+            let primeiroFilhoDoFilhoDoFilho = document.createElement('section')
+            primeiroFilhoDoFilho.appendChild(primeiroFilhoDoFilhoDoFilho);
+
+            let terceiroFilho3 = primeiroFilhoDoFilhoDoFilho.parentElement.parentElement.parentElement.lastElementChild.previousElementSibling
+
+            let pai = document.getElementById('pai');
+            let primeiroFilho = document.getElementById('primeiroFilho');
+            let segundoEUltimoFilhodoFilho = document.getElementById('egundoEUltimoFilhoDoFilho');
+            let terceiroFilho = document.getElementById('terceiroFilho');
+            let quartoEUltimoFilho = document.getElementById('quartoEUltimoFilho');
+
+            let removeFilho = pai.removeChild(primeiroFilho)
+
+        </script>
+      </main>
+</body>
+</html>
