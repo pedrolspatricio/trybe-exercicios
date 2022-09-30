@@ -13,9 +13,9 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
-  const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-  function createCalendar() {
+function createCalendar() {
     
     const mounthDays = document.getElementById('days');
 
@@ -38,9 +38,27 @@ function createDaysOfTheWeek() {
         dayListItem.className = 'day';
     }
     }
+
     }
 
-  createCalendar();
+createCalendar();
   
- 
+function createHolidayButton (buttonName) {
+let holidayButton = document.createElement('button');
+let buttonContainer = document.getElementsByClassName('buttons-container')[0];
+holidayButton.id = 'btn-holiday';
+holidayButton.innerHTML = buttonName;
+buttonContainer.appendChild(holidayButton);
+
+}
+
+createHolidayButton('Feriados');
+
+function colorHoliday () {
+    let newColor = 'white';
+    let normalColor = 'rgb(238,238,238)';
+    
+
+}
+
   
