@@ -58,9 +58,9 @@
   <body>
     <script>
         
-        const h1 = document.createElement('h1');
-        h1.innerHTML = 'Exercício - JavaScript DOM';
-        document.body.appendChild(h1);
+        const elementh1 = document.createElement('h1');
+        elementh1.innerHTML = 'Exercício - JavaScript DOM';
+        document.body.appendChild(elementh1);
 
         const elementMain = document.createElement('main');
         elementMain.className = 'main-content';
@@ -73,6 +73,64 @@
         const elementP = document.createElement('p');
         elementP.innerHTML = 'olá pessoas';
         elementSection.appendChild(elementP);
+
+        const elementSection2 = document.createElement('section');
+        elementSection2.className = 'left-content';
+        elementMain.appendChild(elementSection2);
+
+        const elementSection3 = document.createElement('section');
+        elementSection3.className = 'right-content';
+        elementMain.appendChild(elementSection3);
+        
+        const elementImg = document.createElement('img');
+        elementImg.src = 'https://picsum.photos/200';
+        elementImg.className = 'small-image';
+        elementSection2.appendChild(elementImg);
+        
+        const elementUl = document.createElement('ul');
+        elementSection3.appendChild(elementUl);
+        
+        const listItens= ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for(let index = 0; index < listItens.length; index += 1) {
+            const elementLi = document.createElement('li');
+            elementLi.innerHTML = listItens[index];
+            elementUl.appendChild(elementLi);
+        }
+
+        const firstElementH3 = document.createElement('h3');
+        elementMain.appendChild(firstElementH3);
+        const secondElementH3 = document.createElement('h3');
+        elementMain.appendChild(secondElementH3);
+        const tirthElementH3 = document.createElement('h3');
+        elementMain.appendChild(tirthElementH3);
+
+        elementh1.className = 'title';  
+        
+        const elementsH3 = document.getElementsByTagName('h3');
+        for(let index = 0; index < 3; index +=1) {
+            elementsH3[index].className = 'description';
+        }
+
+        elementMain.removeChild(elementSection2);
+
+        elementSection3.style.marginRight = 'auto';
+
+        const fatherelementSection = elementSection.parentElement;
+        fatherelementSection.style.background = 'green';
+
+        elementSection3.removeChild(elementUl);
+
+        const paragraphH3 = document.getElementsByTagName('h3');
+
+        
+
+
+
+                
+
+
+
         
 
     </script>
